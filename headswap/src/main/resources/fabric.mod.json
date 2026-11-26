@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "headswap",
+  "version": "${version}",
+  "name": "Custom Heads",
+  "description": "Reemplaza visualmente (solo en tu cliente) las cabezas de equipamiento de los jugadores por cabezas personalizadas, y permite ocultarlas o excluir jugadores.",
+  "authors": ["HeadSwap contributors"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.headswap.HeadSwapClient"]
+  },
+  "mixins": ["headswap.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
